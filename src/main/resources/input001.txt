@@ -1,0 +1,12 @@
+11
+update pf1 skills Java
+update pf1 education UT
+update pf2 workexperience Indeed
+update pf1 skills Java,Python
+get pf2 1
+get pf1 0
+get pf1 2
+get pf1 3
+get pf1 4
+getfield pf1 3 skills
+getfield pf1 3 education

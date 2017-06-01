@@ -15,6 +15,8 @@ public class LowestCommonAncestor {
      *          ---
      *          8
      *
+     * Time complexity of this solution is O(n)
+     *
      * @param root
      * @param p
      * @param q
@@ -64,6 +66,7 @@ public class LowestCommonAncestor {
          TreeNode(int x) { val = x; }
     }
 
+
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
@@ -75,5 +78,7 @@ public class LowestCommonAncestor {
         root.left.right.left = new TreeNode(8);
 
         System.out.println("(5,8)->" + LowestCommonAncestor.lowestCommonAncestor(root, new TreeNode(5), new TreeNode(8)).val);
+        System.out.println("(4,5)->" + LowestCommonAncestor.lowestCommonAncestor(root, new TreeNode(4), new TreeNode(5)).val);
+        System.out.println("(4,8)->" + LowestCommonAncestor.lowestCommonAncestor(root, new TreeNode(4), new TreeNode(8)).val);
     }
 }

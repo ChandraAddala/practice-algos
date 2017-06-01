@@ -9,7 +9,7 @@ public class GraphDirected extends Graph {
     }
 
     public GraphDirected(InputStream inputStream) {
-        super(inputStream);
+        super(inputStream, true);
     }
 
     @Override
